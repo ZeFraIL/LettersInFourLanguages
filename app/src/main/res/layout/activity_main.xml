@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select language:"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgLanguages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English" />
+
+        <RadioButton
+            android:id="@+id/rbRussian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Russian" />
+
+        <RadioButton
+            android:id="@+id/rbGeorgian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Georgian" />
+
+        <RadioButton
+            android:id="@+id/rbAmharic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amharic" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Additional options:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <CheckBox
+        android:id="@+id/cbShowNeighbors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show adjacent letters" />
+
+    <CheckBox
+        android:id="@+id/cbShowAlphabetPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show serial number" />
+
+    <CheckBox
+        android:id="@+id/cbConvertCase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert case" />
+
+    <Button
+        android:id="@+id/btnAnalyze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perform analysis"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp" />
+
+
+</LinearLayout>
